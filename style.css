@@ -1,0 +1,114 @@
+/* THE ASHEN OZ — Draft A "시적 파랄락스" (neva.game 형식)
+   아트가 주인공. 시 한 줄과 풀블리드 플레이트가 아트북처럼 교차한다.
+   레이어 파랄락스 히어로, 얇은 세리프 대문자 로고, 최소한의 크롬. */
+:root{
+  --deep:#0d1412; --deep2:#111917; --mist:#7ba8a1; --mist-soft:#9fc0ba;
+  --text:#d9dcd6; --muted:#8b948f; --blood:#b3313c;
+  --fdisp:"Cormorant Garamond","Noto Serif KR",serif;
+  --fserif:"Noto Serif KR",serif;
+  --fui:"Inter",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--deep);color:var(--text);font-family:var(--fserif);
+  font-size:17px;line-height:1.9;-webkit-font-smoothing:antialiased;overflow-x:hidden;word-break:keep-all;
+  animation:pagein 1.2s ease both}
+@keyframes pagein{from{opacity:0}to{opacity:1}}
+img,video{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(179,49,60,.5);color:#f2f0e8}
+:focus-visible{outline:1px solid var(--mist);outline-offset:3px}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity 1.2s cubic-bezier(.22,.61,.36,1),transform 1.2s cubic-bezier(.22,.61,.36,1)}
+.reveal.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  body{animation:none}
+  .reveal{opacity:1;transform:none;transition:none}
+  .layer{transform:none !important}
+  .layer-bg{animation:none}
+  .plate img,.plate video{transform:none !important}
+}
+
+/* 상단 바: 로고 + 단일 CTA 만 */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;
+  justify-content:space-between;padding:20px 30px}
+.topbar-brand{font-family:var(--fdisp);font-size:17px;letter-spacing:.22em;text-transform:uppercase;color:var(--text);
+  text-shadow:0 2px 14px rgba(0,0,0,.6)}
+.topbar-cta{font-family:var(--fui);font-size:12.5px;font-weight:600;letter-spacing:.08em;
+  padding:10px 20px;border:1px solid rgba(217,220,214,.35);border-radius:999px;transition:.25s;
+  background:rgba(13,20,18,.3);backdrop-filter:blur(6px)}
+.topbar-cta:hover{background:var(--text);color:var(--deep);border-color:var(--text)}
+
+/* 파랄락스 히어로 */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;
+  text-align:center;overflow:hidden}
+.layer{position:absolute;inset:-12% 0;will-change:transform}
+.layer-bg{background:url("img/page_bg.jpg") center 30%/cover no-repeat;
+  animation:kenburns 34s ease-in-out infinite alternate}
+@keyframes kenburns{from{scale:1}to{scale:1.07}}
+.layer-bg::after{content:"";position:absolute;inset:0;
+  background:radial-gradient(90% 70% at 50% 42%,transparent 30%,rgba(13,20,18,.72) 78%,var(--deep) 100%)}
+.layer-rain{opacity:.24;background:repeating-linear-gradient(80deg,transparent 0 54px,rgba(217,220,214,.25) 54px 55px,transparent 55px 140px)}
+.hero-center{position:relative;padding:0 26px;max-width:900px}
+.hero-pre{font-family:var(--fui);font-size:12px;font-weight:600;letter-spacing:.5em;text-transform:uppercase;
+  color:var(--mist);margin:0 0 26px}
+.hero-logo{font-family:var(--fdisp);font-weight:400;font-size:clamp(46px,9vw,104px);line-height:1.04;
+  letter-spacing:.12em;text-transform:uppercase;margin:0 0 24px;color:#eef0ea;
+  text-shadow:0 10px 60px rgba(0,0,0,.85)}
+.hero-line{font-size:clamp(15px,1.9vw,19px);font-weight:300;color:var(--mist-soft);letter-spacing:.14em;margin:0 0 40px}
+.br-m{display:none}
+.hero-platforms{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:22px}
+.pf{font-family:var(--fui);font-size:13px;font-weight:600;letter-spacing:.12em;padding:12px 34px;
+  border:1px solid rgba(217,220,214,.4);border-radius:999px;transition:.25s;background:rgba(13,20,18,.24)}
+a.pf:hover{background:var(--text);color:var(--deep);border-color:var(--text)}
+.hero-meta{font-family:var(--fui);font-size:11.5px;letter-spacing:.22em;color:var(--muted);margin:0}
+.hero-scroll{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);
+  font-family:var(--fui);font-size:10.5px;letter-spacing:.4em;text-transform:uppercase;color:var(--muted)}
+.hero-scroll::after{content:"";display:block;width:1px;height:40px;margin:12px auto 0;
+  background:linear-gradient(var(--mist),transparent);animation:fall 2.2s infinite}
+@keyframes fall{0%{opacity:0;transform:translateY(-8px)}40%{opacity:1}100%{opacity:0;transform:translateY(12px)}}
+
+/* 시 한 줄 — 잉크 디바이더와 함께 */
+.verse{padding:150px 26px;text-align:center}
+.verse-line{font-family:var(--fdisp);font-size:clamp(24px,3.6vw,40px);font-weight:500;line-height:1.55;
+  letter-spacing:.04em;color:#e6e8e1;margin:0 auto;max-width:820px}
+.verse-line::before{content:"";display:block;width:64px;height:1px;margin:0 auto 40px;
+  background:linear-gradient(90deg,transparent,rgba(123,168,161,.75),transparent)}
+.verse-line::after{content:"";display:block;width:5px;height:5px;margin:40px auto 0;transform:rotate(45deg);
+  background:rgba(179,49,60,.65)}
+
+/* 풀블리드 플레이트 — 아트북 도판 */
+.plate{margin:0;position:relative;overflow:hidden}
+.plate img,.plate video{width:100%;will-change:transform;transform:scale(1.06)}
+.plate::after{content:"";position:absolute;inset:0;pointer-events:none;
+  box-shadow:inset 0 30px 60px -30px var(--deep),inset 0 -30px 60px -30px var(--deep)}
+.plate-cap{position:absolute;left:30px;bottom:22px;z-index:2;font-family:var(--fui);font-size:11px;
+  letter-spacing:.2em;color:rgba(217,220,214,.82);text-shadow:0 1px 8px rgba(0,0,0,.9)}
+.plate-cap span{font-family:var(--fdisp);font-style:italic;font-size:13px;letter-spacing:.12em;
+  color:var(--mist-soft);margin-right:12px;text-transform:uppercase}
+
+/* 마무리 */
+.finale{padding:170px 26px 130px;text-align:center}
+.finale-logo{font-family:var(--fdisp);font-weight:400;font-size:clamp(34px,5.5vw,62px);
+  letter-spacing:.14em;text-transform:uppercase;color:#eef0ea;margin:0 0 16px}
+.finale-line{font-family:var(--fui);font-size:12px;letter-spacing:.24em;color:var(--muted);margin:0 0 42px}
+.finale-btn{display:inline-block;font-family:var(--fui);font-size:14px;font-weight:600;letter-spacing:.1em;
+  padding:16px 44px;border-radius:999px;background:var(--blood);color:#f4efe8;transition:.25s;
+  box-shadow:0 16px 46px -18px rgba(179,49,60,.9)}
+.finale-btn:hover{transform:translateY(-2px);background:#c73b47}
+.finale-note{font-family:var(--fserif);font-size:14px;color:#6c756f;margin:26px 0 0;letter-spacing:.04em}
+
+.foot{padding:0 26px 60px;text-align:center;font-family:var(--fui);font-size:12px;
+  letter-spacing:.06em;color:#5d655f}
+.foot p{margin:0 0 6px}
+.foot-legal{color:#454c47}
+
+@media (max-width:768px){
+  .topbar{padding:16px 20px}
+  .br-m{display:inline}
+  .verse{padding:100px 22px}
+  .verse-line::before{margin-bottom:30px}
+  .verse-line::after{margin-top:30px}
+  .plate-cap{left:18px;bottom:14px}
+  .finale{padding:120px 22px 100px}
+}
