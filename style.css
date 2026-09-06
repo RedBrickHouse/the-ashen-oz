@@ -89,14 +89,19 @@ a{color:inherit;text-decoration:none}
   letter-spacing:.14em;text-transform:uppercase;color:#eef0ea;margin:0 0 16px}
 .finale-line{font-family:var(--fui);font-size:12.5px;letter-spacing:.08em;color:var(--muted);margin:0 0 42px}
 .finale-btn{display:inline-block;font-family:var(--fui);font-size:14px;font-weight:600;letter-spacing:.1em;
-  padding:16px 44px;border-radius:999px;background:var(--blood);color:#f4efe8;transition:.25s;
-  box-shadow:0 16px 46px -18px rgba(179,49,60,.9)}
-.finale-btn:hover{transform:translateY(-2px);background:#c73b47}
+  padding:16px 44px;border-radius:999px;background:#e6e2da;color:#151412;transition:.25s;
+  box-shadow:0 16px 46px -18px rgba(0,0,0,.9)}
+.finale-btn:hover{transform:translateY(-2px);background:#f6f2ea}
 .finale-note{font-family:var(--fserif);font-size:14px;color:#6c756f;margin:26px 0 0;letter-spacing:.01em}
 
 .foot{padding:0 26px 60px;text-align:center;font-family:var(--fui);font-size:12px;
   letter-spacing:.06em;color:#5d655f}
 .foot p{margin:0 0 6px}
+.partners{display:flex;align-items:center;justify-content:center;gap:26px;margin:0 0 34px}
+.p-logo{height:40px;width:auto;opacity:.95}
+.p-sep{width:1px;height:34px;background:rgba(238,240,234,.25)}
+.p-dev{font-family:var(--fdisp);font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:#eef0ea}
+@media (max-width:600px){.partners{gap:18px}.p-logo{height:32px}.p-dev{font-size:14px;letter-spacing:.1em}}
 .foot-legal{color:#454c47}
 
 @media (max-width:768px){
