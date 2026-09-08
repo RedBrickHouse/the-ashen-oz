@@ -17,7 +17,6 @@
       plate4: "랜턴 불빛 아래",
       verse5: "잿빛 주사위의 루프 속에서,<br>도로시는 절망을 베며 잃어버린 기억을 찾아간다",
       plate5: "당신이 알던 오즈는 사라졌다",
-      finLine: "한국어 · 영어 · 일본어 지원",
       finBtn: "Steam 위시리스트 등록",
       finNote: "위시리스트에 담아 두면 출시 소식을 가장 먼저 받아볼 수 있습니다",
       trailer: "공식 트레일러"
@@ -37,7 +36,6 @@
       plate4: "Under the lantern light",
       verse5: "Inside the loop of the Ashen Dice,<br>Dorothy cuts through despair toward her lost memories",
       plate5: "The Oz you knew is gone",
-      finLine: "Korean · English · Japanese",
       finBtn: "Wishlist on Steam",
       finNote: "Add it to your wishlist and be the first to hear about the release",
       trailer: "Official trailer"
@@ -57,7 +55,6 @@
       plate4: "灯笼的光下",
       verse5: "在灰烬骰子的循环中，<br>桃乐丝斩开绝望，寻回失去的记忆",
       plate5: "你所熟知的奥兹已不复存在",
-      finLine: "支持韩语 · 英语 · 日语",
       finBtn: "加入 Steam 愿望单",
       finNote: "加入愿望单，第一时间获得发售消息",
       trailer: "官方预告片"
@@ -77,7 +74,6 @@
       plate4: "ランタンの灯りの下で",
       verse5: "灰のダイスのループの中で、<br>ドロシーは絶望を斬り、失われた記憶へと向かう",
       plate5: "あなたの知るオズは、もうない",
-      finLine: "韓国語 · 英語 · 日本語対応",
       finBtn: "Steamでウィッシュリスト登録",
       finNote: "ウィッシュリストに入れておくと、発売の知らせをいち早く受け取れます",
       trailer: "公式トレーラー"
