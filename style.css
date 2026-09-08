@@ -101,7 +101,6 @@ a{color:inherit;text-decoration:none}
 .p-logo{height:40px;width:auto}
 .p-sep{width:1px;height:56px;background:rgba(238,240,234,.25)}
 .partner{display:flex;flex-direction:column;align-items:center;gap:9px;text-decoration:none}
-.p-cap{font-family:var(--fui);font-size:11px;letter-spacing:0;color:#8b948f;white-space:nowrap}
 .p-dev{font-family:var(--fdisp);font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:#eef0ea}
 @media (max-width:600px){.partners{gap:18px}.p-logo{height:32px}.p-dev{font-size:14px;letter-spacing:.1em}}
 .foot-legal{color:#454c47}
@@ -121,7 +120,7 @@ a{color:inherit;text-decoration:none}
   .finale{padding:110px 22px 92px}
 }
 
-@media (max-width:600px){.partners{flex-direction:column;gap:14px}.p-sep{width:64px;height:1px}.p-cap{white-space:normal;text-align:center}}
+@media (max-width:600px){.partners{flex-direction:column;gap:14px}.p-sep{width:64px;height:1px}}
 
 /* press kit assets */
 .topbar-brand{display:inline-flex;align-items:center}
@@ -132,8 +131,9 @@ a{color:inherit;text-decoration:none}
 .facts div{display:grid;grid-template-columns:78px 1fr;gap:10px;font-size:13px;line-height:1.6}
 .facts dt{font-family:var(--fui);font-size:11px;letter-spacing:.08em;color:#6c756f;padding-top:2px}
 .facts dd{margin:0;color:#c9cec6}
-.links{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-top:30px;font-family:var(--fui);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
-.links a{color:#8b948f;border-bottom:1px solid rgba(238,240,234,.18);padding-bottom:2px;transition:.2s}
-.links a:hover{color:#eef0ea;border-bottom-color:#eef0ea}
+.links{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.links a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:1px solid rgba(238,240,234,.22);color:#8b948f;transition:.2s}
+.links a:hover{color:#eef0ea;border-color:#eef0ea}
+.links svg{width:20px;height:20px;fill:currentColor}
 .p-dev-logo{height:34px;width:auto}
 @media (max-width:600px){.hero-logo img{width:86vw}.finale-logo img{width:70vw}.facts{grid-template-columns:1fr;gap:8px}.p-dev-logo{height:28px}}
