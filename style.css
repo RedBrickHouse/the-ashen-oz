@@ -137,3 +137,18 @@ a{color:inherit;text-decoration:none}
 .links svg{width:20px;height:20px;fill:currentColor}
 .p-dev-logo{height:34px;width:auto}
 @media (max-width:600px){.hero-logo img{width:86vw}.finale-logo img{width:70vw}.facts{grid-template-columns:1fr;gap:8px}.p-dev-logo{height:28px}}
+
+/* language switch */
+.topbar-right{display:flex;align-items:center;gap:12px}
+.lang-switch{display:inline-flex;border:1px solid rgba(238,240,234,.22);border-radius:999px;overflow:hidden}
+.lang-btn{font-family:var(--fui);font-size:11px;font-weight:600;letter-spacing:.06em;padding:7px 10px;background:transparent;border:0;color:#8b948f;cursor:pointer;transition:.2s}
+.lang-btn+.lang-btn{border-left:1px solid rgba(238,240,234,.16)}
+.lang-btn:hover{color:#eef0ea}
+.lang-btn.active{background:#eef0ea;color:#151412}
+html:lang(zh-Hans) body{font-family:"Noto Serif SC","Noto Serif KR",serif}
+html:lang(ja) body{font-family:"Noto Serif JP","Noto Serif KR",serif}
+html:lang(zh-Hans) .verse-line,html:lang(zh-Hans) .hero-line{font-family:"Noto Serif SC",serif}
+html:lang(ja) .verse-line,html:lang(ja) .hero-line{font-family:"Noto Serif JP",serif}
+@media (max-width:600px){.topbar-right{gap:8px}.lang-btn{font-size:10px;padding:6px 7px}}
+html:lang(zh-Hans){--fui:"Inter","Noto Serif SC",sans-serif;--fserif:"Noto Serif SC","Noto Serif KR",serif}
+html:lang(ja){--fui:"Inter","Noto Serif JP",sans-serif;--fserif:"Noto Serif JP","Noto Serif KR",serif}

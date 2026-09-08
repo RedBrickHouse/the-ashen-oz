@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://theashenoz.net/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+KR:wght@300;400;600&family=Inter:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+KR:wght@300;400;600&family=Noto+Serif+SC:wght@300;400;600&family=Noto+Serif+JP:wght@300;400;600&family=Inter:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23101816'/%3E%3Cpath d='M16 5 L26 15 L16 13 L6 15 Z' fill='%237ba8a1'/%3E%3Crect x='15' y='13' width='2' height='13' fill='%237ba8a1'/%3E%3C/svg%3E">
 </head>
@@ -21,7 +21,12 @@
 
 <header class="topbar">
   <a class="topbar-brand" href="#top"><img class="topbar-logo" src="img/ashenoz-logo.png" alt="The Ashen OZ" width="1200" height="296"></a>
-  <a class="topbar-cta" href="https://store.steampowered.com/app/4375420/The_Ashen_OZ/" target="_blank" rel="noopener">Steam 위시리스트</a>
+  <div class="topbar-right">
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="ko" onclick="setLang('ko')">KR</button><button type="button" class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button><button type="button" class="lang-btn" data-lang="zh" onclick="setLang('zh')">CN</button><button type="button" class="lang-btn" data-lang="ja" onclick="setLang('ja')">JP</button>
+    </div>
+    <a class="topbar-cta" href="https://store.steampowered.com/app/4375420/The_Ashen_OZ/" target="_blank" rel="noopener" data-i18n="topCta">Steam 위시리스트</a>
+  </div>
 </header>
 
 <!-- 파랄락스 히어로 -->
@@ -31,66 +36,66 @@
   <div class="hero-center">
     <p class="hero-pre">Ashbone Games</p>
     <h1 class="hero-logo"><img src="img/ashenoz-logo.png" alt="The Ashen OZ" width="1200" height="296" fetchpriority="high"></h1>
-    <p class="hero-line">잿빛으로 물든 오즈, <br class="br-m">소녀의 동화가 다시 시작된다</p>
-    <p class="hero-meta">잿빛의 오즈 · 2D 다크 액션 로그라이트</p>
+    <p class="hero-line" data-i18n="heroLine">잿빛으로 물든 오즈, <br class="br-m">소녀의 동화가 다시 시작된다</p>
+    <p class="hero-meta" data-i18n="heroMeta">잿빛의 오즈 · 2D 다크 액션 로그라이트</p>
   </div>
   <p class="hero-scroll" aria-hidden="true">Scroll</p>
 </section>
 
 <!-- 시 한 줄 + 아트 플레이트 교차 -->
 <section class="verse">
-  <p class="verse-line reveal">피 묻은 구두를 신고,<br>소녀는 마녀의 우산을 편다</p>
+  <p class="verse-line reveal" data-i18n="verse1">피 묻은 구두를 신고,<br>소녀는 마녀의 우산을 편다</p>
 </section>
 
 <figure class="plate reveal">
   <img src="img/whale.jpg" alt="사슬에 묶인 거대한 고래 곁을 지나는 소녀" width="1600" height="900">
-  <figcaption class="plate-cap"><span>Plate I</span>사슬에 묶인 고래</figcaption>
+  <figcaption class="plate-cap"><span>Plate I</span><em data-i18n="plate1">사슬에 묶인 고래</em></figcaption>
 </figure>
 
 <section class="verse">
-  <p class="verse-line reveal">파고들고, 받아치고, 몰아붙인다<br>숨 돌릴 곳은 우산 아래뿐</p>
+  <p class="verse-line reveal" data-i18n="verse2">파고들고, 받아치고, 몰아붙인다<br>숨 돌릴 곳은 우산 아래뿐</p>
 </section>
 
 <figure class="plate reveal">
   <video autoplay muted loop playsinline preload="metadata" poster="media/mov01.jpg"><source src="media/mov01.webm" type="video/webm"><source src="media/mov01.mp4" type="video/mp4"></video>
-  <figcaption class="plate-cap"><span>Plate II</span>잿빛 폐허의 전투</figcaption>
+  <figcaption class="plate-cap"><span>Plate II</span><em data-i18n="plate2">잿빛 폐허의 전투</em></figcaption>
 </figure>
 
 <section class="verse">
-  <p class="verse-line reveal">촛불이 일렁이는 연회장,<br>식탁의 주인이 몸을 일으킨다</p>
+  <p class="verse-line reveal" data-i18n="verse3">촛불이 일렁이는 연회장,<br>식탁의 주인이 몸을 일으킨다</p>
 </section>
 
 <figure class="plate reveal">
   <video autoplay muted loop playsinline preload="metadata" poster="media/mov09.jpg"><source src="media/mov09.webm" type="video/webm"><source src="media/mov09.mp4" type="video/mp4"></video>
-  <figcaption class="plate-cap"><span>Plate III</span>연회장의 괴물</figcaption>
+  <figcaption class="plate-cap"><span>Plate III</span><em data-i18n="plate3">연회장의 괴물</em></figcaption>
 </figure>
 
 <section class="verse">
-  <p class="verse-line reveal">노란 벽돌길이 끝나는 곳,<br>잿빛 안개 속으로 걸어 들어간다</p>
+  <p class="verse-line reveal" data-i18n="verse4">노란 벽돌길이 끝나는 곳,<br>잿빛 안개 속으로 걸어 들어간다</p>
 </section>
 
 <figure class="plate reveal">
   <img src="img/scarecrow.jpg" alt="랜턴 불빛 아래 허수아비와 마주친 소녀">
-  <figcaption class="plate-cap"><span>Plate IV</span>랜턴 불빛 아래</figcaption>
+  <figcaption class="plate-cap"><span>Plate IV</span><em data-i18n="plate4">랜턴 불빛 아래</em></figcaption>
 </figure>
 
 <section class="verse">
-  <p class="verse-line reveal">잿빛 주사위의 루프 속에서,<br>도로시는 절망을 베며 잃어버린 기억을 찾아간다</p>
+  <p class="verse-line reveal" data-i18n="verse5">잿빛 주사위의 루프 속에서,<br>도로시는 절망을 베며 잃어버린 기억을 찾아간다</p>
 </section>
 
 <figure class="plate reveal">
   <img src="img/keyart.jpg" alt="비 내리는 잿빛 하늘 아래 우산을 든 도로시" width="1600" height="900" loading="lazy">
-  <figcaption class="plate-cap"><span>Plate V</span>당신이 알던 오즈는 사라졌다</figcaption>
+  <figcaption class="plate-cap"><span>Plate V</span><em data-i18n="plate5">당신이 알던 오즈는 사라졌다</em></figcaption>
 </figure>
 
 <!-- 마무리 -->
 <section class="finale">
   <h2 class="finale-logo reveal"><img src="img/ashenoz-logo.png" alt="The Ashen OZ" width="1200" height="296" loading="lazy"></h2>
-  <p class="finale-line reveal">한국어 · 영어 · 일본어 지원</p>
-  <a class="finale-btn reveal" href="https://store.steampowered.com/app/4375420/The_Ashen_OZ/" target="_blank" rel="noopener">Steam 위시리스트 등록</a>
-  <p class="finale-note reveal">위시리스트에 담아 두면 출시 소식을 가장 먼저 받아볼 수 있습니다</p>
+  <p class="finale-line reveal" data-i18n="finLine">한국어 · 영어 · 일본어 지원</p>
+  <a class="finale-btn reveal" data-i18n="finBtn" href="https://store.steampowered.com/app/4375420/The_Ashen_OZ/" target="_blank" rel="noopener">Steam 위시리스트 등록</a>
+  <p class="finale-note reveal" data-i18n="finNote">위시리스트에 담아 두면 출시 소식을 가장 먼저 받아볼 수 있습니다</p>
   <nav class="links reveal">
-    <a href="https://www.youtube.com/watch?v=wJ_zPot8Ol0" target="_blank" rel="noopener" aria-label="공식 트레일러" title="공식 트레일러"><svg><use href="#ic-youtube"/></svg></a>
+    <a href="https://www.youtube.com/watch?v=wJ_zPot8Ol0" target="_blank" rel="noopener" aria-label="공식 트레일러" title="공식 트레일러" data-i18n-title="trailer"><svg><use href="#ic-youtube"/></svg></a>
     <a href="https://x.com/OzAshborne" target="_blank" rel="noopener" aria-label="X" title="X"><svg><use href="#ic-x"/></svg></a>
     <a href="https://discord.gg/cuHrkmHdM" target="_blank" rel="noopener" aria-label="Discord" title="Discord"><svg><use href="#ic-discord"/></svg></a>
     <a href="https://store.steampowered.com/app/4375420/The_Ashen_OZ/" target="_blank" rel="noopener" aria-label="Steam" title="Steam"><svg><use href="#ic-steam"/></svg></a>
@@ -102,6 +107,7 @@
   <p class="foot-legal">© 2026 Ashbone Games Inc. Published by RED BRICK HOUSE. All rights reserved.</p>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
