@@ -18,7 +18,7 @@
       verse5: "잿빛 주사위의 루프 속에서,<br>도로시는 절망을 베며 잃어버린 기억을 찾아간다",
       plate5: "당신이 알던 오즈는 사라졌다",
       finBtn: "Steam 위시리스트 등록",
-      finNote: "위시리스트에 담아 두면 출시 소식을 가장 먼저 받아볼 수 있습니다",
+      finNote: "2026년 11월 19~22일 G-STAR, 부산 BEXCO 제2전시장 1층 RED BRICK HOUSE 부스에서 시연할 수 있습니다.",
       trailer: "공식 트레일러"
     },
     en: {
@@ -37,7 +37,7 @@
       verse5: "Inside the loop of the Ashen Dice,<br>Dorothy cuts through despair toward her lost memories",
       plate5: "The Oz you knew is gone",
       finBtn: "Wishlist on Steam",
-      finNote: "Add it to your wishlist and be the first to hear about the release",
+      finNote: "Play at G-STAR on Nov 19–22, 2026, at the RED BRICK HOUSE booth, BEXCO Exhibition Center 2, 1F, Busan.",
       trailer: "Official trailer"
     },
     zh: {
@@ -56,7 +56,7 @@
       verse5: "在灰烬骰子的循环中，<br>桃乐丝斩开绝望，寻回失去的记忆",
       plate5: "你所熟知的奥兹已不复存在",
       finBtn: "加入 Steam 愿望单",
-      finNote: "加入愿望单，第一时间获得发售消息",
+      finNote: "2026年11月19日至22日 G-STAR 期间，欢迎前往釜山 BEXCO 第二展馆1层 RED BRICK HOUSE 展位现场试玩。",
       trailer: "官方预告片"
     },
     ja: {
@@ -75,7 +75,7 @@
       verse5: "灰のダイスのループの中で、<br>ドロシーは絶望を斬り、失われた記憶へと向かう",
       plate5: "あなたの知るオズは、もうない",
       finBtn: "Steamでウィッシュリスト登録",
-      finNote: "ウィッシュリストに入れておくと、発売の知らせをいち早く受け取れます",
+      finNote: "2026年11月19〜22日、G-STARのRED BRICK HOUSEブース（釜山BEXCO第2展示場1階）で試遊できます。",
       trailer: "公式トレーラー"
     }
   };
